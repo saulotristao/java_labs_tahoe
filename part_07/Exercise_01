@@ -10,27 +10,3 @@ that apply to that subclass, ie Animal -> Mammal -> Whale.
 3) Make use of the keyword "super" in at least two constructors.
 4) Write an interface with at least 3 methods. Have the superclass implement this interface.
 */
-
-
-
-package part_07;
-
-
-public class Cordota_Phylum {
-
-boolean
-
-
-
-
-}
-
-
-
-class Carnivora_Order {
-
-}
-
-class Ursidae_Family {
-
-}
