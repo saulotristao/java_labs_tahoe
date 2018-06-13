@@ -8,5 +8,10 @@ package part_01;
  *
  */
 public class Exercise_09 {
-
+    public static void main(String[] args) {
+        double area = 2.4 * 6.4;
+        double perimeter = 2.4 * 2 + 6.4 * 2;
+        System.out.println("Rectangle area is: " + area);
+        System.out.println("Rectangle perimeter is " + perimeter);
+    }
 }

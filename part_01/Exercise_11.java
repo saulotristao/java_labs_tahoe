@@ -14,5 +14,24 @@ package part_01;
  */
 
 public class Exercise_11 {
+    public static void main(String[] args) {
+        int birth = 6;
+        int death = 12;
+        int year = 365;
+        int immigrants = 40;
+        int currentPopulation = 380123456;
+        int yearlyBirths = (((60 * 60 * 24 * year) / birth));
+        int yearlyDeaths = (((60 * 60 * 24 * year) / death));
+        int yearlyImmigrants = (((60 * 60 * 24) / immigrants));
+        int yearlyPopulation = (yearlyBirths + yearlyImmigrants - yearlyDeaths);
+
+        System.out.println("Current Year Population = " + currentPopulation);
+        System.out.println("Next Year's Population = "
+                + (currentPopulation + yearlyPopulation));
+        System.out.println("Next Two Year's Population = "
+                + (currentPopulation + (yearlyPopulation * 2)));
+        System.out.println("Next Three Year's Population = "
+                + (currentPopulation + (yearlyPopulation * 3)));
+    }
 
 }
