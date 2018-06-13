@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  *      Calculate investment value
  *
- *      Recieved the following args from user:
+ *      Received the following args from user:
  *          - investment amount
  *          - interest rate in percentage
  *          - number of years to invest
@@ -18,6 +18,22 @@ import java.util.Scanner;
  */
 
 public class Exercise_11 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the investment amount ");
+        double amount = scan.nextDouble();
+        System.out.println("Please enter the interest rate in progress ");
+        double interestRate = scan.nextDouble();
+        System.out.println("Please enter the number of years to invest ");
+        double years = scan.nextDouble();
+
+        for (int i = 0; i <years ; i++) {
+            amount = amount * (1+interestRate/100);
+        }
+
+        System.out.println( "the future value is " + amount);
+
+    }
 
 }
 

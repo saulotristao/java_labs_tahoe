@@ -18,4 +18,19 @@ import java.util.Scanner;
 
 public class Exercise_12 {
 
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the milesToDrive ");
+        double milesToDrive = scan.nextDouble();
+        System.out.println("Please enter the MPG of car ");
+        double carMPG = scan.nextDouble();
+        System.out.println("Please enter the price per galon ");
+        double pricePerGallon = scan.nextDouble();
+
+        double cost = milesToDrive / carMPG * pricePerGallon;
+
+        System.out.println( "the trip is gonna cost " + cost + "dollars");
+
+    }
+
 }

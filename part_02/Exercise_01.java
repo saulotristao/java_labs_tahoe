@@ -1,5 +1,6 @@
 package part_02;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /**
@@ -15,6 +16,15 @@ import java.util.Scanner;
  */
 
 public class Exercise_01 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the temperature in Celsius");
+        double celsius = scan.nextDouble();
+        double fahrenheit = 9 * (celsius/5) + 32;
+        System.out.println(celsius + " degrees in celsius is equal to"+ fahrenheit +
+                "degrees in fahrenheit");
+
+    }
 
 
 }

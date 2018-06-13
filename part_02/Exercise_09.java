@@ -8,6 +8,14 @@ package part_02;
  *
  */
 public class Exercise_09 {
+    public static void main(String[] args){
+        char x = 'Z';
+        do{
+            System.out.println(x);
+            x--;
+        } while(x != 'A');
+        System.out.println(x);
+    }
 
 }
 
