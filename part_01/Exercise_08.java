@@ -9,5 +9,12 @@ package part_01;
  *
  */
 public class Exercise_08 {
+    public static void main(String[] args) {
+        double radius = 3.14;
+        double  area = Math.PI * radius* radius;
+        double perimeter = 2 * Math.PI * radius;
+        System.out.println( area);
+        System.out.println(perimeter);
+    }
 
 }

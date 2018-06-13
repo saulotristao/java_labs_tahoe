@@ -14,5 +14,20 @@ package part_01;
  */
 
 public class Exercise_11 {
+    public static void main(String[] args) {
+        double  population = 380123456;
+        double secondsInYear = 365 * 24 * 3600;
+        double bornPerYear = secondsInYear/6;
+        double diesPerYear = secondsInYear/12;
+        double imigratesPerYear = secondsInYear/40;
+
+
+        for (int i = 0; i <3 ; i++) {
+            population = bornPerYear - diesPerYear + imigratesPerYear;
+        }
+
+        System.out.println(population);
+    }
+
 
 }

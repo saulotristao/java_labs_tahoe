@@ -9,5 +9,11 @@ package part_01;
  */
 
 public class Exercise_10 {
-
+    public static void main(String[] args) {
+        double distance = 12;
+        double distanceMiles = distance / 1.6;
+        double timeHours = (30 * 60 + 30) / 3600;
+        double averageSpeed = distanceMiles / timeHours;
+        System.out.println(averageSpeed);
+    }
 }
