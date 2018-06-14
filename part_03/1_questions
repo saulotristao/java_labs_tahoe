@@ -3,64 +3,80 @@ Answer the following questions
 
 
 1) What is an instance variable?
-
+   A instance variable is relate to that object.
 
 2) How do you create a new object?
-
+    By calling a new, which is calling the controller.
 
 3) After creating a new object, how do you set that objects instance variables?
-
+    if the variables are public, you can call the variables and change, otherwise using get and set methods
 
 4) What is a reference variable? Why do you need to be careful with reference variables?
-
+    Is a variable related to the that object that is refering to another object variable.
+    It's necessary to be careful because once you change in one place, you are changing for both objects.
 
 5) How many methods can you have in a class?
-
+    as many as you want
 
 6) How do you exit a method at any point?
-
+    break
 
 7) What is the method signature required to return an "int" from a method?
-
+    public int methodName(){
+    }
 
 8) Assuming "int num = 10", what is the syntax to return "num" from a method?
-
+    return num;
 
 9) How do you pass a parameter to a method?
-
+    Between it's parenthesis -- method( parameter)
 
 10) What is the method signature for a method named sum() that takes two int parameters and returns their sum as in int?
-
+    private int sum(int a, int b)
 
 11) What is a constructor?
-
+    It's what builds an object for that class
 
 12) How does Java treat a class without a constructor?
-
+    it creates a defaults blank constructor
 
 13) What would the constructor for "public class Animal" look like?
-
+    public Animal (parameter a, par b){
+    }
 
 14) What is the effect of passing parameters to a constructor?
+    you create a Parameterized Constructor. now everytime a new object from that class is create, you must
+    send the parameters
 
 
 15) When should you pass parameters to a constructor?
+    1. when you the instant variables are private
+    2. when you want that the objects follow a standard
 
 
 16) What does the finalize() method do?
-
+    delete an object from memory
 
 17) What does the "this" keyword do?
-
+    this garantee that that instant variable is the instant variable of that object
 
 18) When should you use the "this" keyword?
-
+   The this keyword is used to refer to the members of a class if local variables have the same name.
 
 19) Write an example of the "this" keyword in action.
+    class Person{
+        String name;
+        int age;
 
+        Person(String name, int age){
+            this.name = name;
+            this.age = age;
+        }
+    }
 
 20.) EXplain the difference between static and non-static variables.
-
+    static variables are related to the class while non-static variable realed to the objected created for that class
+    A static instance variable can be accessed without creating an object of it's containing class.
 
 21.) Explain the difference between static and non-static methods.
-
+    A member (variables or method) is declared static when that member should be used independently of any objects.
