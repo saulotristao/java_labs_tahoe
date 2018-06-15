@@ -15,3 +15,23 @@ import java.util.Scanner;
  Output can be on one line or many lines. However you like.
 
  */
+
+
+class Exercise_01 {
+    public static void main(String[] args) {
+        int[] firsTen = new int [10];
+        Scanner scan = new Scanner(System.in);
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Please enter the number on the position " + i);
+            firsTen[i] = scan.nextInt();
+        }
+
+        for (int i = 1; i <10 ; i+=2) {
+            System.out.print(firsTen[i]+",");
+        }
+        for (int i = 8; i >=0; i-=2) {
+            System.out.print(firsTen[i]+",");
+        }
+    }
+}

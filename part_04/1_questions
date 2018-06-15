@@ -1,49 +1,96 @@
 Answer the following questions:
 
 1) What is an array?
+   An array is a collection of variables of the same type.
 
 2) What the code required to create (instantiate) a String array with size 10 named "cats"?
+    String[] cats = new String[10]
 
 3) What is a multidimensional array?
+    All this means is that each index in the array, contains an array.
 
 4) What is the code required to create (instantiate) a 2-dimensional int array that is 6 high and 6 wide named "scores"?
+    int[][] scores = new int[6][6]
 
 5) Using code, how do you retrieve a String that is the 10th item in a traditional array named dogs?
+    String new = dogs[9]
 
 6) What is an ArrayIndexOutOfBoundsException?
+    When you try to get something in a position that doesn't belong to that Array
 
 7) Using one line of code, demonstrate how to retrieve the second to the last item from a int array.
+    int secondlast = array[array.length-2]
 
 8) What is the maximum allowable size of an array in Java?
+    Integer.MAX_VALUE - 5
 
 9) What is a bubble sort?
+    buble sort is a way to organize an array in increasing order
 
 10) How does a bubble sort work?
+    it walks over the arrays, comparing the values and organizing it. The number of interaction is equals to the array size.
 
 11) When might you use an irregular array? What is a good example of an irregular array?
+    When you are asking the users for a input array, and the users can use any size of array
 
 12) Demonstrate how to iterate through an array, printing each value, using a for loop.
+    for loop from 0 to array.length or from array.length to 0
 
 13) Demonstrate how to iterate through an array, printing each value, using a while loop.
+    Create a variable and increment it, until it reach length.
 
 14) What is a queue?
+    A queue is a list in which elements can be accessed in first-in, first-out (FIFO) order only.
+    A queue is like a line at a bank—the first in line is the first served.
+    What makes data structures such as stacks and queues interesting is that they combine storage for information with the methods that access that information.
 
 15) What are the two primary operations that a queue performs?
+    In general, queues support two basic operations: put and get.
+    Each put operation places a new element on the end of the queue.
+    Each get operation retrieves the next element from the front of the queue.
 
 16) What is a stack?
+    Thus, a stack is like a stack of plates on a table—the first down is the last to be used.
 
 17) What differentiates stacks and queues?
+    One is FiFo >> queue
+    one is Filo >> slack
 
 18) When would you use an enhanced for loop?
+    when you want to go over all the elements of that loops
 
 19) What is "The Collections Framework"? What classes does it include?
+    The Collections Framework is a
+    set of classes that implement various data structures, such as lists, vectors, sets, and maps.
 
 20) How do you iterate over a two-dimensional array? Demonstrate using psuedo code.
+    for nest loop
+    for (int rows = 0; rows < array.length ; rows++) {
+                for (int cols = 0; cols < array[rows].length; cols++) {
+                    if (temp > array[rows][cols]){
+                        temp = array[rows][cols];
+                    }
+                }
+
+            }
 
 21) What is a String?
+    Strings are not a primitive data type. They are the first Object type
 
 22) What are a few common methods for operating on Strings?
+    int length = "hello".length(); // returns the length of the String
+    boolean equals = "hello".equals("hello"); // returns true if Strings match
+    int search = "hello".indexOf("o"); // searches "hello" for substring "o" and returns index of first match. Returns -1 if not found
 
 23) What does "Strings are immutable" mean?
+    Strings are immutable objects, meaning you cannot change them after they have been created.
 
 24) Using the CLI, how do you invoke a Java application and provide two parameters to the main method?
+    Move into the directory of the .java file that includes the main() method
+        $cd /path/to/example.java
+    Compile the file using the built-in Java compiler (javac)
+        $javac example.java
+    Upon successful compilation check that you now have a .class file with the same name
+        $ls -al
+    Invoke your .class file using Java
+        $java example.class arg1 arg2 arg3

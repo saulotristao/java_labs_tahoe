@@ -15,6 +15,14 @@ package part_04;
 public class Exercise_03 {
 
     public static void main(String[] strings) {
+        int[][] matrix = new int[5][10];
 
+        for (int rows = 0; rows < matrix.length ; rows++) {
+            for (int cols = 0; cols <matrix[rows].length; cols++) {
+                matrix[rows][cols] = cols + rows *10;
+                System.out.print(matrix[rows][cols] + " ");
+            }
+            System.out.println();
+        }
     }
 }
