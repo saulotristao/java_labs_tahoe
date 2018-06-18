@@ -9,5 +9,12 @@ package part_01;
  */
 
 public class Exercise_10 {
+    public static void main(String[] args) {
+        double miles = 12 / 1.6;
+        double thirtysecs = miles / 61;
+        double onehour = thirtysecs * 120;
+
+        System.out.println(onehour);
+    }
 
 }
