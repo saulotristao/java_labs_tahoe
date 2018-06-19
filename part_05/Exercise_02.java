@@ -10,3 +10,57 @@ import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
  * flow of execution and the varying state of each private variable. You can name these classes whatever you want.
  *
  */
+
+class Class_01a {
+    public static void main(String[] args) {
+        Class_02a exp = new Class_02a();
+        Class_01a obj = new Class_01a();
+        obj.settingUpClass(exp);
+        System.out.println(exp.getB());
+        obj.moddifyingClass(exp);
+        System.out.println(exp.getA());
+
+    }
+
+    private void settingUpClass (Class_02a a){
+        a.setA(1);
+        a.setB(2);
+        a.setC("hi");
+    }
+
+    private void moddifyingClass (Class_02a a){
+        a.setA(3);
+        a.setB(4);
+        a.setC("hi-again");
+    }
+}
+
+class Class_02a {
+    private int a;
+    private int b;
+    private String c;
+
+    public int getA() {
+        return a;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public int getB() {
+        return b;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+    public String getC() {
+        return c;
+    }
+
+    public void setC(String c) {
+        this.c = c;
+    }
+}

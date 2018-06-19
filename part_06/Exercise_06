@@ -1,2 +1,8 @@
 
 Demonstrate dynamic method dispatch. Refer to java_book_source Example19, but do not copy it verbatim.
+
+Dynamic method dispatch is the mechanism by which a call to an overridden method is resolved at run time rather than compile time.
+Dynamic method dispatch is important because this is how Java implements run-time polymorphism
+
+-- a superclass reference variable can refer to
+   a subclass object

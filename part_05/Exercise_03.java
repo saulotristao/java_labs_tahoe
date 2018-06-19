@@ -7,3 +7,30 @@ package part_05;
  * Use System.out.println at various points to demonstrate the flow of execution. You can name these classes
  * whatever you want.
  */
+
+class Class_A {
+    public static void main(String[] args) {
+        Class_B again = new Class_B();
+        System.out.println(again.power(1));
+        System.out.println(again.power(1.1));
+        System.out.println(again.power(1,1));
+    }
+
+
+}
+
+class Class_B {
+    private int a;
+
+    public double power (int a){
+        return a*2;
+    }
+    public double power (double a){
+        return a*4;
+    }
+
+    public double power (int a, int b){
+        return a*b;
+    }
+
+}
