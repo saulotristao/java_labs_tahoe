@@ -105,7 +105,9 @@ method to another?
 
 
 27) What is the shorthand name for variable-arity?
-    ????
+    VarArgs
+    a way of pass one or more parameters of the same type to a method
+    show a example
 
 28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
     Remember to put everything of the string before ... the other parameters goes before
