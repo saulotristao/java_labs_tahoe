@@ -11,12 +11,11 @@ package part_01;
  *
  */
 public class Exercise_04 {
-  public static void main(String[] args) {
-   for (int i = 1; i <=4 ; i++) {
-    System.out.println(i + " " + 2*i + " " + 4*i);
-   }
-  }
+     public static void main(String[] args) {
+         for (int i = 1; i <= 4; i++) {
+             System.out.println(i + " " + 2 * i + " " + 4 * i);
+         }
+     }
+ }
 
-
-}
 
