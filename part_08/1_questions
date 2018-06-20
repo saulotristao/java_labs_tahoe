@@ -1,26 +1,89 @@
 1) Describe the exception hierarchy.
+    it will catch in the order you write the code
 
 2) What is a try/catch statement?
+    you write try and some code and the compiler will try to execute that code
+    if find any exception it will send the code to the catch part that will hadle the exception
 
 3) Why do we use try/catch statements?
+    when we are not sure about the code's behaviour
 
 4) Write a full example of a try/catch/finally statement that catches two distinct exceptions
+    try{
+        // block of code to monitor for errors
+    }
+    catch (Exception one){
+        // handle for Exception one
+    }
+    catch(Exception two){
+        // handle for Exception two
+    }
 
 5) What does it mean to "throw" an exception? How does it work?
+    it means that once the code reach an error it will throw that exception
 
 6) What happens if your application encounters an exception and you don't catch it or throw it?
+    your program will crash
 
 7) When catching exception in an inheritance hierarchy, should you catch the subclass exception or the
 superclass exception first? Why?
+    ????
 
 8) Write a nested try/catch statement.
+    try{
+        // do smth
+    } catch ( Execption one) {
+        try {
+            // do smth else
+        } catch (Exception two) {
+            // do
+        }
+    }
+
+
 
 9) What does it mean to rethrow an exception?
+    not handle it, and trhow it back to the next method
 
 10) What are the 7 methods that come with the Throwable class?
 
+     1    Throwable fillInStackTrace()
+    This method fills in the execution stack trace.
+
+    2    Throwable getCause()
+    This method returns the cause of this throwable or null if the cause is nonexistent or unknown.
+
+    3    String getLocalizedMessage()
+    This method creates a localized description of this throwable.
+
+    4    String getMessage()
+    This method returns the detail message string of this throwable.
+
+    5    StackTraceElement[] getStackTrace()
+    This method provides programmatic access to the stack trace information printed by printStackTrace().
+
+    6    Throwable initCause(Throwable cause)
+    This method initializes the cause of this throwable to the specified value.
+
+    7    void printStackTrace()
+    This method prints this throwable and its backtrace to the standard error stream.
+
+    8    void printStackTrace(PrintStream s)
+    This method prints this throwable and its backtrace to the specified print stream.
+
+    9    void printStackTrace(PrintWriter s)
+    This method prints this throwable and its backtrace to the specified print writer.
+
+    10    void setStackTrace(StackTraceElement[] stackTrace)
+    This method sets the stack trace elements that will be returned by getStackTrace()
+    and printed by printStackTrace() and related methods.
+
 11) What does the "finally" block do?
+    it runs under any circumstances
 
 12) When is the finally block executed? Will it ever not be executed?
+    after the try and catch. YES
 
 13) What are the three recently added features to Java exceptions?
+
+    ???
