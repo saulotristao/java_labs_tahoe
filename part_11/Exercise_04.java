@@ -9,6 +9,23 @@ package part_11;
 
 public class Exercise_04 {
 
+    public static void main(String[] args) {
+        Integer[] arrayNumber = { 1, 2, 3, 4,5};
+        Double[] arrayDNumber = { 1.1, 2.2, 3.3, 4.4,5.5};
+
+        System.out.println(sumArray(arrayNumber));
+        System.out.println(sumArray(arrayDNumber));
+
+    }
+
+    public static <T extends Number> Number sumArray (T[] array){
+        double sum = 0;
+        for (T a: array) {
+            sum+= a.doubleValue();
+        }
+        return sum;
+    }
+
 }
 
 

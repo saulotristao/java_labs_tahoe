@@ -15,7 +15,19 @@ Complete the code so that it prints the following lines:
 **/
 
 public class Exercise_01 <T> {
+    public static <T> void printArray (T[] array){
+        for (T unit: array ) {
+            System.out.println(unit);
+        }
+    }
 
+    public static void main(String[] args) {
+        Integer[] arrayNumber = { 1, 2, 3, 4,5};
+        String[] arrayString = {"hello", "World", "brazil", "won"};
+
+        printArray(arrayNumber);
+        printArray(arrayString);
+    }
 }
 
 

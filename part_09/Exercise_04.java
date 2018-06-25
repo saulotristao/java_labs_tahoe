@@ -8,9 +8,22 @@ package part_09;
 //Hint, use the "File" class.
 
 import java.io.File;
+import java.io.FileReader;
 import java.text.SimpleDateFormat;
 
 public class Exercise_04 {
+
+    public static void main(String[] args) {
+        try{
+            File exercise_04 = new File("/Users/saulot/Desktop/CNTahoe/TestExercises/IHaveADream.txt");
+            System.out.println(exercise_04.lastModified());
+            exercise_04.setReadOnly();
+        } catch ( Exception e){
+            e.getMessage();
+        }
+
+
+    }
 
 
 }
